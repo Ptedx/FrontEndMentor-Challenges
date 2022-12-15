@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    background-color: hsl(34, 15%, 80%);
+}
+body,.div, .container, .div_children{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div{
+    width: 80vw;
+    max-width: 1440px;
+    height: 80vh;
+    background-color: hsl(30, 38%, 92%);
+    border-radius: 10px;
+}
+.container{
+    height:90%;
+    width: 50vw;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.div_children{
+    width: 50%;
+    background: white;
+    margin: 0 auto;
+    height: 100%;
+    font-size: 1.4em; /*0.1em == 1px with font-size at 62.5%*/
+    
+}
+.children1{
+    background-image: url("./img/image-product-desktop.jpg");
+    background-size: cover;
+}
+.children2{
+    flex-direction: column;
+    align-items: flex-start;
+}
+h1,#price{
+    font-family: 'Fraunces', serif;
+    margin:10px 10px 20px 10px;
+}
+span,p {
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+    margin-left: 10px;
+}
+span{
+    letter-spacing: 2px;
+}
+#price{
+    color: green;
+    font-size: 2em;
+    font-weight: 600;
+}
+.prices{
+    margin:20px 0px;
+}
+#button{
+    margin:0 auto;
+    width: 90%;
+    text-align: center;
+    padding:15px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.6em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+@media screen and (max-width:893px){
+    #button{
+        padding: 10px;
+    }
+}
+@media screen and (max-width:804px){
+    .div_children *{
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+}
+@media screen and (max-width:610px){
+    html{
+        font-size: 66%;
+    }
+    .div{
+        width: 100vw;
+        height: 100vh;
+    }
+    .container{
+        flex-direction: column;
+        width: 90%;
+        overflow: hidden;
+    }
+    .div_children{
+        width: 100%;
+    }
+    .div_children *{
+        margin-bottom: 10px;
+    }
+    p{
+        margin-right: 20px;
+    }
+    .children1{
+        background-image: url("./img/image-product-mobile.jpg");
+    }
+}
