@@ -1,2 +1,2 @@
 # FrontEndMentor-Challenges
-This repository had been created to pulish my projects
+Esse repositório foi criado para postar meus projetos do FrontEndMentor.
